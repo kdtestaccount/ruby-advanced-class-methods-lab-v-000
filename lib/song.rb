@@ -58,7 +58,7 @@ class Song
     new_file_name = file_name.tr('.mp3', '')
     file_info = new_file_name.split(" - ")
     artist_name = file_info[0]
-    @artist_name = file_info[1]
+    song_name = file_info[1]
     
     
     new_song = Song.new
