@@ -55,8 +55,13 @@ class Song
   end
   
   def self.new_from_filename
-  
-end
+    new_song = Song.new
+    new_song.name = song_name
+    @@all << new_song
+    # puts "@@all array: #{@@all}"
+    found_song = Song.all.find{|song| song.name == song_name}
+    found_song
+  end
   
 end
 
