@@ -54,7 +54,7 @@ class Song
     song_list
   end
   
-  def self.new_from_filename
+  def self.new_from_filename(file_name)
     new_song = Song.new
     new_song.name = song_name
     @@all << new_song
