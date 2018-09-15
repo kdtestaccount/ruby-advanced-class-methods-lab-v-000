@@ -55,7 +55,7 @@ class Song
   end
   
   def self.new_from_filename(file_name)
-    new_file_name = file_name.tr(".mp3", '')
+    new_file_name = File.basename(file_name,File.extname(file))
     file_info = new_file_name.split(" - ")
     artist_name = file_info[0]
     song_name = file_info[1]
