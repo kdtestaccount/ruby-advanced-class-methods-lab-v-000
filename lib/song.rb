@@ -54,8 +54,9 @@ class Song
     song_list
   end
   
+  def self.new_from_filename
   
-  
+end
   
 end
 
