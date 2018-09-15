@@ -59,8 +59,6 @@ class Song
     file_info = new_file_name.split(" - ")
     artist_name = file_info[0]
     song_name = file_info[1]
-    
-    
     new_song = Song.new
     new_song.name = song_name
     @@all << new_song
