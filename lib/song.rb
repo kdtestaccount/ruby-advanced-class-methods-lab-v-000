@@ -68,6 +68,22 @@ class Song
     found_song
   end
   
+    def self.create_from_filename(file_name)
+    new_file_name = File.basename(file_name,File.extname(file_name))
+    file_info = new_file_name.split(" - ")
+    artist_name = file_info[0]
+    song_name = file_info[1]
+    new_song = Song.new
+    new_song.name = song_name
+    new_song.artist_name = artist_name
+    @@all << new_song
+    # puts "@@all array: #{@@all}"
+    found_song = Song.all.find{|song| song.name == song_name && song.artist_name = artist_name}
+    found_song
+  end
+  
+  
+  
 end
 
 
