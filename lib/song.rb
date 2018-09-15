@@ -61,6 +61,7 @@ class Song
     song_name = file_info[1]
     new_song = Song.new
     new_song.name = song_name
+    new_song.artist_name = artist_name
     @@all << new_song
     # puts "@@all array: #{@@all}"
     found_song = Song.all.find{|song| song.name == song_name}
