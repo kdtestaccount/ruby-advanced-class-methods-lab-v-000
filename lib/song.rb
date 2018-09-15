@@ -49,9 +49,9 @@ class Song
   end
   
   def self.alphabetical
-    song_list Song.all.sort_by { |word| word.downcase }
+    song_list = Song.all.sort_by { |word| word.downcase }
     # Song.all.each do |song|
-    puts "#{person.name}"
+    song_list
   end
   
   
