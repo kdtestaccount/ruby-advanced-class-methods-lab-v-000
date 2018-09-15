@@ -82,6 +82,8 @@ class Song
     found_song
   end
   
+  def self.destroy_all
+    @@all
   
   
 end
