@@ -55,6 +55,11 @@ class Song
   end
   
   def self.new_from_filename(file_name)
+    
+    person.name = file_name.split(" - ").collect{|w| w.capitalize}.join(" ")
+    
+    
+    
     new_song = Song.new
     new_song.name = song_name
     @@all << new_song
